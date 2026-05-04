@@ -24,3 +24,9 @@ while True:
         if user_choice not in [1, 2, 3, 4]:
             print("Invalid choice. Try again.")
             continue
+
+    first_number = float(input("Enter first number: "))
+    second_number = float(input("Enter second number: "))
+
+    result = calculate(first_number, second_number, user_choice)
+    print("Result:", result)
