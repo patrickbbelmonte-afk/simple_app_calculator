@@ -25,8 +25,17 @@ while True:
             print("Invalid choice. Try again.")
             continue
 
-    first_number = float(input("Enter first number: "))
-    second_number = float(input("Enter second number: "))
+        first_number = float(input("Enter first number: "))
+        second_number = float(input("Enter second number: "))
 
-    result = calculate(first_number, second_number, user_choice)
-    print("Result:", result)
+        result = calculate(first_number, second_number, user_choice)
+        print("Result:", result)
+
+    except ValueError:
+        print("Invalid input. Please enter numbers only.")
+    except ZeroDivisionError as error:
+        print("Error:", error)
+
+    if input("Try again? (yes/no): ").lower() != "yes":
+        print("Thank you!")
+        break
