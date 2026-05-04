@@ -10,3 +10,10 @@ def calculate(first_number, second_number, operation):
         if second_number == 0:
             raise ZeroDivisionError("Cannot divide by zero.")
         return first_number / second_number
+
+while True:
+    print("\n=== SIMPLE CALCULATOR ===")
+    print("1 - Addition")
+    print("2 - Subtraction")
+    print("3 - Multiplication")
+    print("4 - Division")
