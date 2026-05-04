@@ -17,3 +17,10 @@ while True:
     print("2 - Subtraction")
     print("3 - Multiplication")
     print("4 - Division")
+
+    try:
+        user_choice = int(input("Choose operation (1-4): "))
+
+        if user_choice not in [1, 2, 3, 4]:
+            print("Invalid choice. Try again.")
+            continue
